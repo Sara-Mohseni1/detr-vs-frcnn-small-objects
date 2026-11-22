@@ -3,6 +3,7 @@
 A small empirical check on 100 COCO val2017 images. In my survey on vision transformers in object detection I wrote that DETR has trouble with small objects. Here I tested that claim myself, on my own laptop.
 
 Author: Sara Mohseni
+
 Full write-up: DETR_vs_FasterRCNN_Small_Objects_Report.pdf
 
 ## Main result
@@ -22,7 +23,7 @@ On this sample DETR found more small objects than Faster R-CNN, so the claim fro
 | Parameters | 41.8 M | 41.5 M |
 | Mean CPU time per image | 24.58 s | 12.95 s |
 
-Timings come from a single run on a laptop CPU. The Faster R-CNN time covers model inference only, the DETR time also includes pre- and post-processing, and the laptop briefly went to sleep during the Faster R-CNN run, so the gap is only rough.
+Timings come from a single run on a laptop CPU. The Faster R-CNN time covers model inference only and the DETR time also includes pre- and post-processing, so the gap is only rough.
 
 
 
